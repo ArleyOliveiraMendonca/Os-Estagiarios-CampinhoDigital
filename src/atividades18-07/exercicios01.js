@@ -1,3 +1,6 @@
+/* Elabore um algoritmo que receba dois números e determine qual é maior entre eles,
+se os números forem igueais, mostre uma mensagem no console "Os números são iguais". */
+
 let rs = require('readline-sync');
 
 let numero1 = rs.questionInt("Digite o primeiro numero: ");
