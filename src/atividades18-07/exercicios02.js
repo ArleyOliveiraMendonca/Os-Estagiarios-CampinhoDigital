@@ -1,3 +1,5 @@
+/* Elabore um algoritmo que receba um número (1 - 7) e devolva o dia da semana correspondente. */
+
 const entrada = require('readline-sync');
 
 let arrayDiaSemana = ['DOMINGO', 'SEGUNDA', 'TERÇA', 'QUARTA', 'QUINTA', 'SEXTA', 'SABADO'];
