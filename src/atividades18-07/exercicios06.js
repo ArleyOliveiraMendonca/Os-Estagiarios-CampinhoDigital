@@ -4,34 +4,34 @@ dizer que é primo. (um número primo é um número que só é divisivel por ele
 Dica: Neste exercício você pode precisar de ajuda do operador MÓDULO (%) você também
 pode precisar criar mais de um loop. */
 
-let nEntrada = 50;
 
-function conjuntoDosNPrimos(){
 
-	function nPrimos(n){
-		if(n == 1) return false;
+function nPrimos(n){
+	if(n == 1) return false;
 	
-		for(var i = 2; i < n; i++){
-			if(n % i == 0) return false;
-		}
-		return true;
-}
-	for(var i = 1; i <= nEntrada; i++){
-		if(nPrimos(i)){
-			console.log(i + " Primo");
-		}
+	for(var i = 2; i < n; i++){
+		if(n % i == 0) return false;
 	}
+	return true;
 }
-
-conjuntoDosNPrimos();
-parEImpar();
-
+	
 function parEImpar(){
-	for(i = 1; i <= nEntrada; i++){
-		if(i % 2 == 0){
-			console.log(i + " Par");
-		}else{
-			console.log(i + " Ímpar");
-		}
+	
+	let nEntrada = 50;
+	
+	for(var i = 1; i <= nEntrada; i++){
+		str = i;
+	if(i % 2 == 0){
+		str += " Par";
+	}else{
+		str += " Ímpar";
+	}
+	if(nPrimos(i)){
+		str += " e Primo";
+	}
+		console.log(str)
 	}
 }
+
+nPrimos();
+parEImpar();
